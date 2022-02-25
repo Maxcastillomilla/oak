@@ -638,7 +638,7 @@ body{
 }
 
 .i1{
-    background-image: url(/1.JPG);
+    background-image: url(./1.JPG);
     height: 100%;
     align-items: center;
     /* background-position-y: -4vw ; */
@@ -648,7 +648,7 @@ body{
 
 
 .i1v2{
-    background-image: url(/1.JPG);
+    background-image: url(./1.JPG);
     height: 100%;
     background-position: bottom;
     /* background-position-y: -4vw ; */
@@ -658,7 +658,7 @@ body{
 
 
 .i2{
-    background-image: url(/2.jpeg);
+    background-image: url(./2.jpeg);
     height: 100%;
     background-position-y: -5vw ;
     
@@ -668,7 +668,7 @@ body{
 }
 
 .i3{
-    background-image: url(/3.jpg);
+    background-image: url(./3.jpg);
     height: 100%;
    
     background-position: top;
@@ -676,7 +676,7 @@ body{
 }
 
 .i4{
-    background-image: url(/4.jpg);
+    background-image: url(./4.jpg);
     height: 100%;
     
     
@@ -685,7 +685,7 @@ body{
 }
 
 .i5{
-    background-image: url(/5.jpg);
+    background-image: url(./5.jpg);
     height: 100%;
     background-position: center;
     
@@ -695,7 +695,7 @@ body{
 
 
 .i6{
-    background-image: url(/6.jpg);
+    background-image: url(./6.jpg);
     height: 100%;
     
     
@@ -703,7 +703,7 @@ body{
 }
 
 .i7{
-    background-image: url(/6.jpg);
+    background-image: url(./6.jpg);
     height: 100%;
     
     background-position-y: -5vw ;
@@ -711,7 +711,7 @@ body{
 }
 
 .i7{
-    background-image: url(/7.jpg);
+    background-image: url(./7.jpg);
     height: 100%;
     
     /* background-position-y: -5vw ; */
@@ -722,7 +722,7 @@ body{
 
 .i8{
 
-    background-image: url(/7.jpg);
+    background-image: url(./7.jpg);
     height: 100%;
     
     /* background-position-y: -5vw ; */
