@@ -16,6 +16,34 @@ body{
 
 
 
+#megaline{
+    content: '';
+    position: absolute;
+
+    margin-top: 360px;
+    width: 5px;
+    height: 0;
+    background-color: hsla(196, 70%, 64%, 0.718);
+
+    left: calc(50% - 1px);
+    
+    z-index: 25;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .margen{
     margin-left: 5%;
     margin-right: 5%;
@@ -88,11 +116,11 @@ body{
 #nav ul li a {
     
     text-decoration: none;
-    padding: 20px 20px;
+    padding:  20px;
    
     display: block;
     color: #FFF;
-    text-align: center;
+    text-align: top;
     font-size: 1vw;
 }
 
@@ -102,7 +130,7 @@ body{
     padding: 10px 20px;
     display: block;
     color: #FFF;
-    text-align: center;
+   
     min-width: 100px;
 }
 
@@ -384,13 +412,14 @@ body{
 
 .parallax{
     position: absolute;
-    width: 130%;
+    width: 100%;
     
     background-size: cover;
+    width: 120%;
     
     z-index: -1;
     transition: 0.45s;
-    height: 100%;
+    /* height: 100%; */
     
 }
 
@@ -620,14 +649,17 @@ body{
 
 
 .d:hover .parallax{
-    transform: translateX(-50px);
+    /* transform: translateX(-25px); */
+    transform: translateY(-50px );
     
 }
 
-
+.d .parallax{
+    bottom: -50px;
+}
 
 .i .parallax{
-    right: -50px;
+    left: -50px;
     
 
 }
@@ -639,8 +671,8 @@ body{
 
 .i1{
     background-image: url(./1.JPG);
-    height: 100%;
-    align-items: center;
+    height: calc(100% + 100px);
+    bottom: 0;
     /* background-position-y: -4vw ; */
     
     
@@ -648,9 +680,10 @@ body{
 
 
 .i1v2{
+    background: cover;
     background-image: url(./1.JPG);
-    height: 100%;
-    background-position: bottom;
+    height: 150%;
+    /* background-position: bottom; */
     /* background-position-y: -4vw ; */
     
     
@@ -659,8 +692,8 @@ body{
 
 .i2{
     background-image: url(./2.jpeg);
-    height: 100%;
-    background-position-y: -5vw ;
+    height: calc(100% + 100px);
+    bottom: 0;
     
     
     
@@ -669,26 +702,22 @@ body{
 
 .i3{
     background-image: url(./3.jpg);
-    height: 100%;
-   
-    background-position: top;
+    height: calc(100% + 100px);
+    bottom: 0;
     
 }
 
 .i4{
     background-image: url(./4.jpg);
-    height: 100%;
-    
-    
-    background-position: center;
+    height: calc(100% + 100px);
+    bottom: 0;
     
 }
 
 .i5{
     background-image: url(./5.jpg);
-    height: 100%;
-    background-position: center;
-    
+    height: calc(100% + 100px);
+    bottom: 0;
     
     /* background-position-y: -2vw ; */
 }
@@ -696,45 +725,40 @@ body{
 
 .i6{
     background-image: url(./6.jpg);
-    height: 100%;
-    
-    
-    background-position: center;
+    height: calc(100% + 300px);
+    bottom: 0;
 }
 
 .i7{
     background-image: url(./6.jpg);
-    height: 100%;
+    height: 110%;
     
-    background-position-y: -5vw ;
-    background-position: center;
+    height: calc(100% + 100px);
+    bottom: 0;
 }
 
 .i7{
     background-image: url(./7.jpg);
-    height: 100%;
-    
-    /* background-position-y: -5vw ; */
-    
-    background-position: center;
-    
+    height: calc(100% + 100px);
+    bottom: 0;
 }
 
 .i8{
 
     background-image: url(./7.jpg);
-    height: 100%;
+    
     
     /* background-position-y: -5vw ; */
     
-    background-position: center;
+    height: calc(100% + 100px);
+    bottom: 0;
 }
 
-.contenedor::before{
+/* .contenedor::before{
     content: '';
     position: absolute;
     width: 2px;
-    height: 100%;
+    height: 120%;
     background-color: hsla(196, 70%, 64%, 0.718);
 
     left: calc(50% - 1px);
@@ -749,7 +773,7 @@ body{
     background-color: hsla(196, 70%, 64%, 0.718);
 
     left: calc(50% - 1px);
-    /* padding-top: 40%; */
+    
     bottom: 0;
 
 
@@ -763,11 +787,8 @@ body{
     background-color: hsla(196, 70%, 64%, 0.718);
 
     left: calc(50% - 1px);
-    /* padding-top: 40%; */
     top: 0;
-
-
-}
+} */
 
 
 
@@ -789,6 +810,24 @@ body{
     left: calc(-2vw);
 
     position: absolute;
+}
+.sublineh::before{
+    content: '';
+    width: 70px;
+    
+    height: 3px;
+    
+    background-color: hsla(196, 70%, 64%, 0.718);
+    margin: 0;
+    
+    
+    z-index: 100;
+    position: absolute;
+   
+
+    left: calc( 5% + 30px);
+
+    
 }
 
 
@@ -1038,7 +1077,22 @@ body{
 
 
 
+.form2 {
+      
+        
+    grid-column: 6 / 11;
+    grid-row: 22;
+    text-align: left;
+    
+    
+width: 60%;
 
+border-radius: 1em;
+padding: 3.5em 1.5em;
+
+padding-top: 100px;
+/*  z-index: 50; */
+} 
 
 
 
@@ -1082,7 +1136,7 @@ padding-top: 100px;
 .form_tittle{
   text-align: center;
   font-size: 1.9rem;
-  margin-bottom: .4em;
+  margin-bottom: .2em;
   font-family: 'Lato', sans-serif;
 }
 
@@ -1099,8 +1153,8 @@ padding-top: 100px;
 .form__cta{
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
-  background-color: rgb(59, 59, 59);
-  color: #fff;
+  background-color: #63c2e4;
+  color: black;
   border: none;
   padding: .7em 0;
   border-radius: .2em;
@@ -1124,6 +1178,10 @@ padding-top: 100px;
 
 
 
+.fade{
+    opacity: 0;
+    transition: 1s;
+}
 
 
 
@@ -1182,7 +1240,7 @@ margin-right: auto;
 
 .img{
     
-    background-position-y: 0 ;
+    background-position-y: 50px;
     
 }
 
@@ -1210,13 +1268,59 @@ margin-right: auto;
 }
 
 
+.fade{
+    opacity: 0;
+    transition: 1s;
+}
+
+
+
+.sublineh::before{
+    content: '';
+    width: 70px;
+    
+    height: 3px;
+    
+    background-color: hsla(196, 70%, 64%, 0.718);
+    margin: 0;
+    
+    
+    z-index: 100;
+    position: absolute;
+   
+
+    left: calc(30px);
+
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 }
 
-    
+/* font-weigth = 100 */
 
 
 
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
 
 
 
