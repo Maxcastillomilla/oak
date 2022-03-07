@@ -20,6 +20,7 @@
 
 
     <img class="logoblancophone" src = "./logoblanco.svg" style="padding-left: 10%;" >
+    <img class="logoblancophone" src = "./logoblanco.svg" style="padding-left: 10%;" >
 
     <div class="pcmenu" id="nav">
         <ul style="
@@ -29,15 +30,16 @@
             <li class="logoblanco" style="margin-right: 14px;"><img  src = "./logoblanco.svg" alt="OAK"/></li>
 
 
-            <li><a href="/oak/index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
           <li><a href="#">Quienes Somos</a></li>
           <li><a href="#">Servicios</a></li>
-          <li><a href="/oak/empresas.html">Proyectos</a></li>
-          <li><a href="/oak/contacto.html">Contacto</a></li>
+          <li><a href="./empresas.html">Proyectos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
           <li class="borde" ><a style="
             padding-bottom: 10px;
             padding-top: 10px;
             margin-top: 10px;
+            margin-left: 20px;
         " href="#">COTIZA AQUÍ</a></li>
         </ul>
     </div>
@@ -52,16 +54,23 @@
             <div class="barra"></div>
         </button>
         <div class="dropdown-content">
-            <a href="/oak/index.html">Home</a>
+            <a href="./index.html">Home</a>
             <a href="#">Quienes Somos</a>
             <a href="#">Servicios</a>
-            <a href="/oak/empresas.html">Proyectos</a>
-            <a href="/oak/contacto.html">Contacto</a>
+            <a href="./empresas.html">Proyectos</a>
+            <a href="./contacto.html">Contacto</a>
             <a href="#">COTIZA AQUÍ</a>
         
         </div>
     </div>
   
+
+  
+
+
+
+
+
 
 
     <section class="imagenbackgraund">
@@ -94,9 +103,9 @@
     
 
 
-<div class="margen" style="background-color: white;">
+<div id="contactoform"  class="margen" style="background-color: white;">
     
-    <form class="form" id="form"  action="https://formspree.io/f/xdobayoj"
+    <form class="form" id="form"  action="https://formspree.io/f/xoqrwpdv"
     method="POST">
         <div class="form__container">
             <h2 class="form__tittle"  style="margin-bottom: 0px;">ESTAMOS <br>PARA SERVIRTE</h2>
@@ -107,14 +116,55 @@
 
             <input type="text" class="form__input" placeholder="Nombre" name="name">
             <input type="email" class="form__input" placeholder="Email" name="_replyto">
+            <select name="quality" id="quality" required="" class="form__service">
+                <option value="" selected="" disabled="">-Selecionar Servicio-</option>
+                <option value="Empresarial">Empresarial</option>
+                <option value="Residencial">Residencial</option>
+                <option value="Consultoria">Consultoria</option>
+              </select>
+
             <textarea class="form__input form__input--message" placeholder="Mensaje" name="message"></textarea>
+            
             <input type="submit" value="Enviar Mensaje" class="form__cta">
-            <a onclick="history.back()"><i class="arrow left"></i>Go Back</a>
+            <!-- <a onclick="history.back()"><i class="arrow left"></i>Go Back</a> -->
         </div>
     </form>
+    
+
+
+
+
+    <div id="redes">
+        <h1 class="conttitulo">DIRECCIÓN</h1>
+        <h1 class="contcont"  style="padding-bottom: 20px;">Lorem ipsum dolor sit  Tenetur quibusdam quasi sunt voluptatem velit.</h1>
+    
+        <h1 class="conttitulo">CORREO ELECTRÓNICO</h1>
+        <h1 class="contcont" style="padding-bottom: 20px;">info@goldenoak.cl</h1>
+    
+        <h1 class="conttitulo">DIRECCIÓN</h1>
+        <h1 class="contcont">+569488962563</h1>
+        <h1 class="contcont" style="padding-bottom: 20px;">+562589652356</h1>
+
+
+        <div >
+            <img class="lasredes" src = "facebook.svg" href="#" >  <img class="lasredes" href="#" src = "insta.svg"      >  
+        </div>
+        
+    
+    
+    </div>
+
+
+
+
 
 
 </div>
+
+
+
+
+
 
 
 

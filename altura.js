@@ -17,6 +17,10 @@ function ScrollParallax(){
     let scrollTop = document.documentElement.scrollTop;
     console.log(scrollTop)
     
+    if((inicio + scrollTop)> 220){
+        document.getElementById("flecha").style.opacity = 0;
+    }
+    
 
     if(scrollTop < 2500){
         document.getElementById("megaline").style.height = inicio + scrollTop + "px"; 

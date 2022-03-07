@@ -16,6 +16,32 @@ body{
 
 
 
+
+
+.conttitulo{
+    font-size: 1em;
+    color: #202020;
+    
+}
+.contcont{
+    font-size: 0.7em;
+    color:#939393 ; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #megaline{
     content: '';
     position: absolute;
@@ -44,11 +70,11 @@ body{
 
 
 
-.margen{
+/* .margen{
     margin-left: 5%;
     margin-right: 5%;
     overflow: hidden;
-}
+} */
 
 .empresas{
     display: grid;;
@@ -127,7 +153,7 @@ body{
 #nav ul li img {
     
     text-decoration: none;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     display: block;
     color: #FFF;
    
@@ -146,6 +172,8 @@ body{
     min-width: 200px;
 
     margin-left: 50px;
+
+    align-self: center;
 
     
 
@@ -437,7 +465,7 @@ body{
     
     text-align: right;
 
-    left:calc(-100% - 2vw );
+    left:calc(-100% - 2vw - 5px );
 }
 
 .tituloii{
@@ -563,13 +591,13 @@ body{
     
     margin: 0;
     position: relative;
-    padding: 0;
+    padding-left: 5px;
     margin-left: 1.3vw;
     
 }
 
 .slid{
-    font-size: 0.9em;
+    font-size: 0.8em;
     top: 7px;
 
     margin-left: 18px;
@@ -577,7 +605,7 @@ body{
 }
 
 .slii{
-    font-size: 0.9em;
+    font-size: 0.8em;
     top: 7px;
 
     margin-left: 18px;
@@ -812,6 +840,7 @@ body{
     position: absolute;
 }
 .sublineh::before{
+   
     content: '';
     width: 70px;
     
@@ -825,7 +854,7 @@ body{
     position: absolute;
    
 
-    left: calc( 5% + 30px);
+    /* left: calc(40px + 1%); */
 
     
 }
@@ -838,7 +867,7 @@ body{
     content: '';
     width: 1.3vw;
     
-    height: 2px;
+    height: 3px;
     
     background-color: hsla(196, 70%, 64%, 0.718);
     margin: 0;
@@ -847,7 +876,7 @@ body{
 
    
 
-    left: calc(-1.3vw);
+    left: calc(-1.3vw - 1px);
 
     position: absolute;
 }
@@ -858,7 +887,7 @@ body{
     content: '';
     width: 1.3vw;
     
-    height: 2px;
+    height: 3px;
     
     background-color: hsla(196, 70%, 64%, 0.718);
     margin-top: 15px;
@@ -868,7 +897,9 @@ body{
 
     position: absolute;
 
+
     position: right;
+    left: calc(4px);
     
 }
 
@@ -921,7 +952,7 @@ body{
    color: black;
     
 
-   top: 100px;
+   top: 160px;
    font-size: 0.7em;
    
    
@@ -976,7 +1007,7 @@ body{
    padding-bottom: 9px;
    font-size: 1.2em;
    color: black;
-    right: calc(20px + 50%) ;
+    right: calc(35px + 50%) ;
 
    top: 20px;
    font-size: 0.7em;
@@ -997,11 +1028,15 @@ body{
     cursor: pointer;
 }
 
+.lasredes{
+    cursor: pointer;
+}
+
 
 
 .lorem{
     position: absolute;
-    font-size: 0.5em;
+    font-size: 0.7em;
     margin-top: 30px;
     color: white;
     text-align: left;
@@ -1077,43 +1112,45 @@ body{
 
 
 
-.form2 {
+#contactoform{
+    display: grid;;
+    background-color: #63c2e4;
+    /* height: 500px; */
+    
+    display: grid;
+      grid-gap: 7%;
+      grid-row-gap: 10px     ;
+      grid-template-columns: repeat(8   , 1fr);
+      grid-template-rows: 2;
+    
+      padding: 2%;
       
-        
-    grid-column: 6 / 11;
-    grid-row: 22;
+}
+
+#redes{
     text-align: left;
     
+    grid-column-start: 6;
+    grid-column-end: 8;
+
+
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
     
-width: 60%;
-
-border-radius: 1em;
-padding: 3.5em 1.5em;
-
-padding-top: 100px;
-/*  z-index: 50; */
-} 
-
-
-
-
-
-
-
-
-
+    padding-top: 180px;
+}
 
 
 
 .form {
-      
-        
-    grid-column: 6 / 11;
-    grid-row: 22;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 6;
+ 
     text-align: left;
     
     
-width: 60%;
+
 
 border-radius: 1em;
 padding: 3.5em 1.5em;
@@ -1150,6 +1187,28 @@ padding-top: 100px;
   border-radius: 0.2em;
 }
 
+.form__service{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;  
+    border: none;
+    border: 1px solid black;
+    border-radius: 0.2em;
+  }
+
+
+  .form__service option{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;  
+    border: none;
+    border: 1px solid black;
+    border-radius: 0.2em;
+  }
+
+
 .form__cta{
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
@@ -1183,6 +1242,11 @@ padding-top: 100px;
     transition: 1s;
 }
 
+.fade2{
+    
+    transition: 1s;
+}
+
 
 
 
@@ -1210,7 +1274,7 @@ padding-top: 100px;
 
     .tituloceleste{
         text-transform: uppercase;
-        font-size: 2.5em;
+        font-size: 2.3em;
     }
     
         
@@ -1257,7 +1321,7 @@ margin-right: auto;
 }
 
 .achicar{
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-top: 30px;
     
 }
@@ -1289,12 +1353,45 @@ margin-right: auto;
     position: absolute;
    
 
-    left: calc(30px);
+    /* left: calc(30px); */
 
     
 }
 
 
+.form {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 8;
+ 
+    text-align: left;
+    
+    
+
+
+border-radius: 1em;
+padding: 3.5em 1.5em;
+
+padding-top: 100px;
+/*  z-index: 50; */
+} 
+
+
+
+#redes{
+    text-align: center;
+    
+    grid-column-start: 2;
+    grid-column-end: 8;
+
+    grid-row: 2;
+
+
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    
+    padding-top: 0px;
+}
 
 
 
@@ -1311,15 +1408,28 @@ margin-right: auto;
 
 
 .arrow {
-    border: solid black;
+    margin-left: -1.8px;
+    border: solid #63c2e4;;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
+    
+    
 }
 
 .left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg) scale(5.0);;
+    
+    
+    scale: 5;
+    color: #63c2e4;
+    
   }
 
 
