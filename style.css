@@ -360,7 +360,36 @@ body{
 }
 
 
+/* ---------------- menu 2 */
 
+
+
+.mcontenido{
+    display: none;
+    position: absolute;
+    background-color: #63c2e4;
+
+    width: 150px;
+    
+}
+
+
+
+/* .pcmenu{
+    position: absolute;
+} */
+
+
+.titulomenu:hover .mcontenido{
+    display: block;
+    
+}
+
+.mcontenido a:hover{
+    background-color: #f1f1f1;
+    color: black !important;
+    
+}
 
 
 
@@ -707,6 +736,16 @@ body{
 }
 
 
+
+
+
+i1.active{
+    transform: translateY(-50px );
+    
+    transition: 1000ms ease-in-out;
+}
+
+
 .i1v2{
     background: cover;
     background-image: url(./1.JPG);
@@ -722,10 +761,12 @@ body{
     background-image: url(./2.jpeg);
     height: calc(100% + 100px);
     bottom: 0;
+}
+
+.i2.active{
+    transform: translateY(-50px );
     
-    
-    
-    
+    transition: 1000ms ease-in-out;
 }
 
 .i3{
@@ -735,12 +776,25 @@ body{
     
 }
 
+.i3.active{
+    transform: translateY(-50px );
+    
+    transition: 1000ms ease-in-out;
+}
+
 .i4{
     background-image: url(./4.jpg);
     height: calc(100% + 100px);
     bottom: 0;
     
 }
+
+.i4.active{
+    transform: translateY(-50px );
+    
+    transition: 1000ms ease-in-out;
+}
+
 
 .i5{
     background-image: url(./5.jpg);
@@ -750,11 +804,24 @@ body{
     /* background-position-y: -2vw ; */
 }
 
+.i5.active{
+    transform: translateY(-50px );
+    
+    transition: 1000ms ease-in-out;
+}
+
+
 
 .i6{
     background-image: url(./6.jpg);
     height: calc(100% + 300px);
     bottom: 0;
+}
+
+.i6.active{
+    transform: translateY(-50px );
+    
+    transition: 1000ms ease-in-out;
 }
 
 .i7{
@@ -1257,6 +1324,13 @@ padding-top: 100px;
 
 
 @media screen and (max-width: 700px) {
+
+    .d{
+        pointer-events: none;
+    }
+    .parallax{
+        pointer-events: none;
+    }
     
 
     .logoblancophone{
@@ -1424,7 +1498,7 @@ padding-top: 100px;
 
   .down {
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg) scale(6.0);;
+    -webkit-transform: rotate(45deg) scale(3.5);;
     
     
     
